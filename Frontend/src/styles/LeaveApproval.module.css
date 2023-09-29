@@ -1,0 +1,28 @@
+
+.icon{
+    position: relative
+}
+
+.icon:hover{
+    cursor: pointer;
+}
+
+.showDes{
+    left: -100px;
+    position: absolute;
+    box-shadow: -5px 3px 41px -6px rgba(0, 0, 0, 0.75); border-radius: 5px;
+    z-index: 100;
+    padding: 10px;
+}
+
+.active{
+    background-color: white;
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 2s ease;
+}
+
+.inactive {
+    visibility: hidden;
+}
+
