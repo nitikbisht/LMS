@@ -134,12 +134,14 @@ const insertleave = async (req, res) => {
     if (classes == 1) {
       res.status(200).send({ message: 'Leave inserted successfully' });
     } else if (classes == -1) {
-      res.status(400).send({ error: 'Leave balance is insufficient' });
+      res.status(400).send({ error: 'Either Leave balance is insufficient or it`s a holiday' });
     } else if (classes == 0) {
       res.status(400).send({ error: 'Leave overlapping' });
-    } else if (classes == 0) {
-      res.status(400).send({ error: 'Leave overlap' });
-    }
+    } else if (classes == -111) {
+      res.status(400).send({ error: 'Condition Failed For restricted Holiday' });
+    } else if (classes == -11) {
+      res.status(400).send({ error: 'Enter valid Data' });
+    } 
   } catch (e) {
     res.status(400).send(e.message);
   }
