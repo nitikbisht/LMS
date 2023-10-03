@@ -190,9 +190,9 @@ const LeaveDashboard = () => {
                 {data?.manager == null ? <LeaveApproval /> : <></>}
               </div>
               <Divider />
-              <div style={{ marginTop: '2%' }}>
+              {/* <div style={{ marginTop: '2%' }}>
                 {data?.manager == null ? <EmpLeave /> : <></>}
-              </div>
+              </div> */}
             </>
           )}
         </>
