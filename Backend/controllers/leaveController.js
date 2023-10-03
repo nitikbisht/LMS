@@ -177,7 +177,7 @@ const approve_reject_leave = async (req, res) => {
 const leave_status = async (req, res) => {
   try {
     const { from_date, to_date } = req.body;
-    console.log(req.body);
+   // console.log(req.body);
     const classes = await EmployeeData.leave_status(from_date, to_date);
     res.send(classes);
   } catch (e) {

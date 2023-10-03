@@ -26,7 +26,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: 'http://localhost:3002', // Replace with your frontend domain
+    origin: 'http://20.231.218.166:3002', // Replace with your frontend domain
     credentials: true, // Allow credentials (cookies)
   })
 );

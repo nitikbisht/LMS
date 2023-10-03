@@ -66,7 +66,7 @@ const EmployeeScheduleTable = ({ startDate, endDate, employees }) => {
 
 
 
-    <TableContainer style={{ width: '90%', overflowY: true }}>
+    <TableContainer style={{ width: '86%', overflowY: true }}>
 
 
 
